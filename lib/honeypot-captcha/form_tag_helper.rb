@@ -28,7 +28,7 @@ module ActionView
               "#{html_ids.map { |i| "##{i}" }.join(', ')} { display:none; }"
             end +
             label_tag(f, l) +
-            send([:text_field_tag, :text_area_tag][rand(2)], f)
+            send(:text_field_tag, f)
           end
         end.join
       end
